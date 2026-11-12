@@ -6,8 +6,8 @@ branches=$(git branch --format="%(refname:short)")
 # Loop through each branch
 for branch in $branches; do
     if [[ "$branch" == *feature* || "$branch" == *fix* || "$branch" == *docs* ]]; then
-        echo "$branch : GOOD"
+        echo "$branch - good"
     else
-        echo "$branch : BAD"
+        echo "$branch - bad"
     fi
 done
